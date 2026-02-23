@@ -1,8 +1,47 @@
 # React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# 🚗 VIN Decoder App
 
-Currently, two official plugins are available:
+Сучасний веб-застосунок для розшифровки VIN-кодів автомобілів з використанням публічного API NHTSA.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🔗 Live Demo
+[**Переглянути працюючий проект**]( https://vin-decoder-3gnr352lm-sergeys-projects-5abd12bd.vercel.app/)
+
+## 🧪 Приклади VIN-кодів для перевірки
+Ви можете скопіювати ці коди, щоб протестувати роботу застосунку:
+- **Tesla Model 3 (2018)**: `5YJ3E1EBJJF000000`
+- **BMW X5 (2015)**: `5UXKR0C5XF000000`
+- **Ford F-150 (2021)**: `1FTEW1CPXMF000000`
+
+
+---
+
+## ✨ Опис функціоналу
+- **Повна розшифровка VIN**: Отримання детальних технічних характеристик автомобіля (Марка, Модель, Рік випуску, Тип двигуна, Країна виробництва тощо).
+- **Історія останніх запитів**: Додаток автоматично зберігає та відображає 3 останні перевірені коди для швидкого повторного доступу.
+- **Persistence (Збереження стану)**: Завдяки використанню `localStorage`, результати пошуку та історія запитів не зникають після оновлення сторінки або закриття браузера.
+- **Довідник технічних параметрів**: Окрема сторінка "Variables List" із повним переліком доступних у API змінних та їх детальним описом.
+- **Адаптивний інтерфейс**: Сучасний дизайн у стилі Glassmorphism, що коректно відображається на десктопах та мобільних пристроях.
+- **SPA Routing**: Налаштована маршрутизація з обробкою серверних редиректів (через `vercel.json`), що дозволяє оновлювати будь-яку сторінку без помилки 404.
+-
+
+---
+
+## 🛠 Інструкція з локального запуску
+
+Щоб запустити цей проект у себе на комп'ютері, виконайте наступні кроки:
+Щоб запустити проєкт у себе на комп'ютері:
+
+ **Клонуйте репозиторій**:
+   ```bash
+git clone [https://github.com/SerhiyCode/VIN-DECODER.git](https://github.com/SerhiyCode/VIN-DECODER.git) 
+Bash
+cd VIN-DECODER
+Встановіть залежності:
+Bash
+npm install
+Запустіть додаток:
+Bash
+npm run dev
+Відкрийте в браузері:
+Перейдіть за адресою http://localhost:5173.
